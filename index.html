@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planetas em RA</title>
+
+  <!-- Importa um CSS externo (opcional, pois usamos estilos internos) -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Estilos internos aplicados diretamente -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+    }
+
+    .container {
+      background-color: #f0f8ff;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      margin: 40px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .botao {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #0077cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .botao:hover {
+      background-color: #005fa3;
+    }
+
+    .projeto h2 {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 1.8em;
+      color: #003366;
+      border-bottom: 2px solid #0077cc;
+      padding-bottom: 10px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .autoria {
+      width: 60%;
+      margin: 20px auto;
+      text-align: right;
+      font-size: 1em;
+    }
+
+    .autoria p {
+      margin-bottom: 20px;
+    }
+
+    .projeto p, .projeto ol {
+      text-align: justify;
+      text-indent: 2em;
+      margin: 10px 40px;
+      font-size: 1.05em;
+      line-height: 1.8;
+    }
+
+    .projeto ol {
+      padding-left: 60px;
+    }
+
+    .projeto h3 {
+      margin-top: 30px;
+      margin-left: 40px;
+      color: #003366;
+    }
+
+    .bibliografia {
+      text-align: left;
+      margin-left: 40px;
+      text-indent: 0;
+    }
+
+    .anexos {
+      margin: 40px;
+      text-align: right;
+      background-color: #f9f9f9;
+      border-left: 4px solid #0077cc;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .anexos img {
+      max-width: 90%;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    .anexos .legenda {
+      font-style: italic;
+      font-size: 14px;
+      margin-top: 5px;
+      text-align: right;
+    }
+
+    .topo {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .topo a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    .topo a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .autoria {
+        width: 90%;
+        text-align: left;
+      }
+
+      .projeto h2 {
+        font-size: 1.4em;
+      }
+
+      .container {
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho com título e botões -->
+  <div class="container" id="topo">
+    <h1>Explorando os Planetas em Realidade Aumentada</h1>
+    <p>Aponte a câmera para os marcadores para visualizar a Terra e Marte em 3D!</p>
+    <a href="#anexos" class="botao">Ver Marcadores</a>
+    <a href="ra.html" class="botao">Entrar na Realidade Aumentada</a>
+  </div>
+
+  <!-- Conteúdo principal do projeto -->
+  <section class="projeto">
+
+    <!-- Título do projeto -->
+    <h2>Universo Interativo: Explorando os Planetas com Realidade Aumentada</h2>
+
+    <!-- Bloco de autores e orientadores -->
+    <div class="autoria">
+      <p><strong>Autores:</strong><br>
+      Davi Dantas de Miranda<br>
+      Pietro Michel de Souza Dreyer<br>
+      Vinicius Costa Correia</p>
+
+      <p><strong>Orientadores:</strong><br>
+      Jackson Luiz Fernandes Adelino<br>
+      Monalisa Tavares Pereira da Silva</p>
+
+      <p><strong>Coorientador:</strong><br>
+      Jan Clay Valentim Araújo</p>
+    </div>
+
+    <!-- Introdução -->
+    <h3>Introdução</h3>
+    <p>Aprender sobre o Sistema Solar pode ser muito divertido quando usamos a tecnologia. Em vez de apenas olhar figuras nos livros, que tal ver os planetas “saltando” da tela do celular ou do computador? Isso é possível com a Realidade Aumentada, uma ferramenta que mistura o mundo real com imagens em 3D.</p>
+    <p>Neste projeto, criamos um site onde os alunos podem ver os planetas em 3D usando a câmera do celular. É como se cada planeta estivesse ali, bem na frente deles. Isso ajuda a entender melhor o tamanho, a cor, e a distância entre os planetas.</p>
+
+    <!-- Metodologia -->
+    <h3>Como Fizemos – Passo a Passo com Explicações</h3>
+    <ol>
+      <li><strong>Escolhemos os planetas:</strong> pesquisamos sobre os planetas do Sistema Solar. Descobrimos curiosidades como: qual é o maior planeta, qual é o mais quente, quais têm anéis ou luas, e assim por diante. Essas informações ajudaram a definir como cada planeta deveria aparecer no projeto.</li>
+      <li><strong>Criamos os planetas com Java:</strong> para desenhar os planetas em três dimensões (3D), usamos o Java, uma linguagem de programação. Java é como uma “linguagem de computador” que dá instruções passo a passo sobre o que desenhar na tela.</li>
+      <li><strong>Aplicamos texturas geradas por Inteligência Artificial:</strong> depois de fazer os modelos, usamos IA para gerar imagens realistas das superfícies dos planetas, como as listras de Júpiter ou os anéis de Saturno.</li>
+      <li><strong>Criamos o site:</strong> usamos HTML (estrutura da página), CSS (aparência) e JavaScript (interações) para montar o site.</li>
+      <li><strong>Adicionamos a Realidade Aumentada:</strong> utilizamos as bibliotecas A-Frame (para 3D) e AR.js (para RA) que permitem visualizar modelos 3D ao apontar a câmera para marcadores impressos.</li>
+      <li><strong>Testamos e colocamos no ar:</strong> testamos em celulares Android, iOS e computadores com webcam. Publicamos gratuitamente em uma plataforma de hospedagem.</li>
+    </ol>
+
+    <!-- Resultados -->
+    <h3>Resultados</h3>
+    <p>Foi criado um site leve, interativo e responsivo que permite ao usuário visualizar modelos 3D dos planetas ao apontar a câmera para marcadores impressos. A navegação é intuitiva e os modelos incluem informações educativas, proporcionando uma experiência de aprendizado ativa e visual. O site mostrou-se funcional em celulares Android e iOS, bem como em desktops com webcam.</p>
+
+    <!-- Conclusão -->
+    <h3>Conclusão</h3>
+    <p>A implementação de um site com RA utilizando ferramentas simples e gratuitas demonstrou ser uma alternativa viável e inovadora para o ensino de astronomia. A experiência promoveu maior engajamento dos alunos e facilitou a compreensão espacial e física dos corpos celestes. Este modelo pode ser facilmente replicado por outras escolas com estrutura mínima.</p>
+
+    <!-- Referência bibliográfica -->
+    <h3>Bibliografia</h3>
+    <p class="bibliografia">
+      MATTAR, João. <em>Games em educação: como os nativos digitais aprendem</em>. São Paulo: Pearson Prentice Hall, 2010. 181 p. ISBN 9788576055624.
+    </p>
+  </section>
+
+  <!-- Seção com a imagem dos marcadores -->
+  <section id="anexos" class="anexos">
+    <h3>Anexos</h3>
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkI1eyUBpaSnYn4YgQdROEmUX9ioRcW31ENEp2Xkm2TiWLlr7jc4q6mBORYKtXdn5vl4lbbbD2ixj4Sc9V4fPLBbayzBYnhpv4CkicSEy4B4xFD-sKqz2fWo3ooZ2izwz0ASJlb4dBB38/s1600/Screenshot+2019-06-03+at+17.25.39.png" alt="Marcadores">
+    <div class="legenda">Marcadores</div>
+  </section>
+
+  <!-- Botão que leva ao topo -->
+  <div class="topo">
+    <a href="#topo">Voltar para o topo</a>
+  </div>
+</body>
+</html>
